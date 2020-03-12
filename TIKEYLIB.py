@@ -16,13 +16,17 @@ def ispressed(key="up",keylist=[]):
     key=" [D"
   if key=="annul":
     key=" [2"
-  press=True
-  for i in range(3):
-    if key[i]==keylist[i]:
-      press=True
-    else:
-      press=False
-  return press
+
+  if key[0]==keylist[0]:
+    if key[1]==keylist[1]:
+      if key[2]==keylist[2]:
+        return True 
+  return False 
+
+
+
+
+
 
 
 """use like this :
